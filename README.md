@@ -1,5 +1,7 @@
 # TypeScript npx Template with Parcel
 
+[![Package Publish](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/npm-publish.yml)
+
 ## How To Run?
 
 ```bash
