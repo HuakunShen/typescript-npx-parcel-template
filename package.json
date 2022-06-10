@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CrossCopy/crosscopy-cli.git"
+    "url": "git+https://github.com/HuakunShen/typescript-npx-parcel-template.git"
   },
   "keywords": [
     "crosscopy"
@@ -26,9 +26,9 @@
   "author": "Huakun Shen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CrossCopy/crosscopy-cli/issues"
+    "url": "https://github.com/HuakunShen/typescript-npx-parcel-template/issues"
   },
-  "homepage": "https://github.com/CrossCopy/crosscopy-cli#readme",
+  "homepage": "https://github.com/HuakunShen/typescript-npx-parcel-template#readme",
   "devDependencies": {
     "@parcel/packager-ts": "^2.6.0",
     "@parcel/transformer-typescript-types": "^2.6.0",
