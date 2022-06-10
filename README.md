@@ -2,6 +2,8 @@
 
 [![Package Publish](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/npm-publish.yml)
 
+[![Test Building](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/test-build.yml/badge.svg)](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/test-build.yml)
+
 ## How To Run?
 
 ```bash
