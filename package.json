@@ -1,20 +1,20 @@
 {
   "name": "ts-npx-parcel-template",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TypeScript npx template built with Parcel",
-  "main": "dist/index.tmp.cjs",
+  "module": "dist/index.tmp.mjs",
   "source": "index.ts",
   "types": "dist/types.d.ts",
-  "bin": "dist/index.cjs",
+  "bin": "dist/index.mjs",
+  "type": "module",
   "scripts": {
     "watch": "parcel watch",
-    "add-shebang": "echo '#!/usr/bin/env node' > dist/index.cjs && cat dist/index.tmp.cjs >> dist/index.cjs",
+    "add-shebang": "echo '#!/usr/bin/env node' > dist/index.mjs && cat dist/index.tmp.mjs >> dist/index.mjs",
     "prebuild": "rimraf dist",
     "build": "parcel build",
-    "postbuild": "npm run add-shebang && rimraf dist/index.tmp.cjs",
-    "start:ts": "ts-node index.ts",
-    "start": "node dist/index.ts",
-    "dev": "npx nodemon index.ts"
+    "postbuild": "npm run add-shebang && rimraf dist/index.tmp.mjs",
+    "dev": "nodemon -x node --loader ts-node/esm index.ts",
+    "start": "node --loader ts-node/esm index.ts"
   },
   "repository": {
     "type": "git",
