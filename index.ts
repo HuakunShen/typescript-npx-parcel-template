@@ -4,10 +4,9 @@ import inquirer from "inquirer";
 const { prompt } = inquirer;
 import figlet from "figlet";
 import chalkAnimation from "chalk-animation";
+import { sleep } from "./src/lib";
 
-const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
-
-console.log(chalk.blue(figlet.textSync("Huakun\nZui Shuai!!!")));
+console.log(chalk.blue(figlet.textSync("Huakun\nZui Shuai!!")));
 
 async function entrypoint() {
   const rainbow = chalkAnimation.rainbow("Huakun Zui Shuai!!!");
@@ -32,4 +31,5 @@ prompt([
   rainbow.start();
   rainbow.stop();
 });
+
 export {};

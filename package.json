@@ -13,8 +13,10 @@
     "prebuild": "rimraf dist",
     "build": "parcel build",
     "postbuild": "npm run add-shebang && rimraf dist/index.tmp.mjs",
-    "dev": "nodemon -x node --loader ts-node/esm index.ts",
-    "start": "node --loader ts-node/esm index.ts"
+    "dev": "nodemon -x node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm index.ts",
+    "start:ts": "node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm index.ts",
+    "start": "node dist/index.mjs",
+    "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -35,13 +37,17 @@
   "devDependencies": {
     "@parcel/packager-ts": "^2.6.0",
     "@parcel/transformer-typescript-types": "^2.6.0",
+    "@types/chalk": "^2.2.0",
     "@types/chalk-animation": "^1.6.1",
     "@types/figlet": "^1.5.4",
     "@types/inquirer": "^8.2.1",
+    "@types/jest": "^28.1.2",
     "@types/node": "^17.0.41",
+    "jest": "^28.1.1",
     "nodemon": "^2.0.16",
     "parcel": "^2.6.0",
     "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
   },
@@ -50,5 +56,20 @@
     "chalk-animation": "^1.6.0",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.4"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/default-esm",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ],
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    }
   }
 }
