@@ -1,6 +1,6 @@
 {
   "name": "ts-npx-parcel-template",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "TypeScript npx template built with Parcel",
   "module": "dist/index.tmp.mjs",
   "source": "index.ts",
