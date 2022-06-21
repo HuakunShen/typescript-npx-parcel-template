@@ -1,6 +1,6 @@
 {
   "name": "ts-npx-parcel-template",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "TypeScript npx template built with Parcel",
   "main": "dist/index.tmp.cjs",
   "source": "index.ts",
@@ -21,7 +21,10 @@
     "url": "git+https://github.com/HuakunShen/typescript-npx-parcel-template.git"
   },
   "keywords": [
-    "crosscopy"
+    "npx",
+    "typescript",
+    "parcel",
+    "template"
   ],
   "author": "Huakun Shen",
   "license": "ISC",

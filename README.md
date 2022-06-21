@@ -4,10 +4,20 @@
 
 [![Test Building](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/test-build.yml/badge.svg)](https://github.com/HuakunShen/typescript-npx-parcel-template/actions/workflows/test-build.yml)
 
-
 [![npm version](https://badge.fury.io/js/ts-npx-parcel-template.svg)](https://badge.fury.io/js/ts-npx-parcel-template)
 
 [![Number of Downloads](https://img.shields.io/npm/dt/ts-npx-parcel-template)](https://www.npmjs.com/package/ts-npx-parcel-template)
+
+This is a simple template of a TypeScript npx console app, built using parcel.
+
+The entrypoint is `index.ts`.
+
+The following packages are used to make the console app more interactive
+
+- chalk
+- inquirer
+- figlet
+- chalk-animation
 
 ## How To Run?
 
@@ -54,5 +64,3 @@ Update `"version"` in `package.json`.
 npm login
 npm publish
 ```
-
-
